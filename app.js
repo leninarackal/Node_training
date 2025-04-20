@@ -8,22 +8,9 @@ app.use(express.urlencoded({extended:true}))
 app.use(bodyparser.json())
 app.use(bodyparser.urlencoded({extended:true}))
 
-
-// app.get('/menu',(req, res)=>{
-//     var menu={
-//         cusin:"multi cusine",
-//         recipies:"non veg, veg, desserts",
-//         is_Thali:true,
-//         is_buffet:false,
-//     }
-//     res.send(menu)  
-// })
 app.get('/',(req,res)=>{
     res.send("hi..Lenin, welcome to my restaurent")
 })
-
-
-
 
 const personRoutes = require('./routes/personRoutes')
 const menuRoutes = require('./routes/menuRoutes')
