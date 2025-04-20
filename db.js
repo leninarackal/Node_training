@@ -1,7 +1,10 @@
 const mongoose =require('mongoose')
+require('dotenv').config()
+  
+// Define the connection string to connect to MongoDB...
 
-// Define the connection string to connect to MongoDB
-const mongoURL = 'mongodb://localhost:27017/MyDB'
+//const mongoURL = process.env.MONGODB_URL_LOCAL
+const mongoURL = process.env.MONGODB_URL
 
 // Connect to MongoDB using the connection string
 const connectDB = async () => {
