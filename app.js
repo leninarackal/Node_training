@@ -8,7 +8,7 @@ app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 app.use(bodyparser.json())
 app.use(bodyparser.urlencoded({extended:true}))
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 4000;
 
 app.get('/',(req,res)=>{
     res.send("hi..Lenin, welcome to my restaurent")
