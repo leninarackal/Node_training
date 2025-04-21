@@ -11,7 +11,7 @@ router.post('/', async (req,res)=>{
         // create a new menu item document using the mongoose model
         const menuItem= new MenuItem(menuData);
         // save the menu item document to the database
-        const menuCard = await menuItem.save('menuitem');
+        const menuCard = await menuItem.save();
         console.log("data saved successfully");
         res.status(200).json({menuCard});
         
